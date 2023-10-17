@@ -67,10 +67,35 @@ public class Main {
 
         // Day of the week
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter a number (1 to 7) to display the day of the week: ");
         int dayNumber = scanner.nextInt();
-        String[] daysOfWeek = {"Invalid input", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        System.out.println(daysOfWeek[dayNumber]);
+        switch (dayNumber) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            case 3:
+                System.out.println("wednesday");
+                break;
+            case 4:
+                System.out.println("thursday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
+                break;
+            default:
+                System.out.println("Invalid input. Please enter a number between 1 and 7.");
+        }
+        System.out.println("The day of the week is: " + dayNumber);
 
         // Enter student information
         System.out.println("Enter student information:");
